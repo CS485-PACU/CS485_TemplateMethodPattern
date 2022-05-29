@@ -22,7 +22,7 @@ std::vector<int> CSVIntAnalyzer::parseLine(const std::string &rcData) const
     }
     tmp = std::stoi(rcData.substr(start, rcData.length()-start+1));
     cInts.push_back(tmp);
-    std::for_each(cInts.begin(), cInts.end(), [](int &n){ std::cout << n;});
+    //std::for_each(cInts.begin(), cInts.end(), [](int &n){ std::cout << n;});
     return cInts;
 }
 
