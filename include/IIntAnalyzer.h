@@ -8,7 +8,7 @@ class IIntAnalyzer
         IIntAnalyzer();
         virtual ~IIntAnalyzer();
 
-        double findAverage(const std::string &) const;
+        double findAverage(const std::string &, std::ostream &) const;
             // parseLine
             // loop vector
             // outputResult

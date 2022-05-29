@@ -26,7 +26,7 @@ std::vector<int> CSVIntAnalyzer::parseLine(const std::string &rcData) const
     return cInts;
 }
 
-std::string CSVIntAnalyzer::outputResult(const std::string&, double) const
+std::string CSVIntAnalyzer::outputResult(const std::string& rcMsg, double value) const
 {
-    return "";
+    return rcMsg + "," + std::to_string(value);
 }
