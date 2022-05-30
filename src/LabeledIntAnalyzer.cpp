@@ -11,11 +11,29 @@
 #include <algorithm>
 #include <iostream>
 
+//***************************************************************************
+// Destructor:  LabeledIntAnalyzer
+//
+// Description: Destory object
+//
+// Parameters:  None
+//
+// Returned:    None
+//***************************************************************************
 LabeledIntAnalyzer::~LabeledIntAnalyzer()
 {
 
 }
 
+//***************************************************************************
+// Function:    parseLine
+//
+// Description: Parse the labeled, comma separated ints from the string
+//
+// Parameters:  rcData - the string containing the ints
+//
+// Returned:    a vector of ints
+//***************************************************************************
 std::vector<int> LabeledIntAnalyzer::parseLine(const std::string &rcData) const
 {
     int start=0, end, tmp;
@@ -36,6 +54,16 @@ std::vector<int> LabeledIntAnalyzer::parseLine(const std::string &rcData) const
     return cInts;
 }
 
+//***************************************************************************
+// Function:    outputResults
+//
+// Description: Return the given results as a string (labeld int)
+//
+// Parameters:  rcMsg - the label of the data
+//              value - the result
+//
+// Returned:    the average
+//***************************************************************************
 std::string LabeledIntAnalyzer::outputResult(const std::string& rcMsg, double value) const
 {
     return rcMsg + " ave: " + std::to_string(value);

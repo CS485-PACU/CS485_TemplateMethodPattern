@@ -13,6 +13,15 @@
 #include "CSVIntAnalyzer.h"
 #include "LabeledIntAnalyzer.h"
 
+//***************************************************************************
+// Function:    main
+//
+// Description: Invoke CSV and LabledInt analyzer
+//
+// Parameters:  none
+//
+// Returned:    EXIT_SUCCESS
+//***************************************************************************
 int main()
 {
     CSVIntAnalyzer cAnalyzer;

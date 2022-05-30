@@ -11,16 +11,45 @@
 #include <algorithm>
 #include <iostream>
 
+//***************************************************************************
+// Constructor: IIntAnalyzer
+//
+// Description: Initialized the object
+//
+// Parameters:  None
+//
+// Returned:    None
+//***************************************************************************
 IIntAnalyzer::IIntAnalyzer()
 {
 
 }
+
+//***************************************************************************
+// Destructor: IIntAnalyzer
+//
+// Description: Destory the object
+//
+// Parameters:  None
+//
+// Returned:    None
+//***************************************************************************
 
 IIntAnalyzer::~IIntAnalyzer()
 {
 
 }
 
+//***************************************************************************
+// Function:    findAverage
+//
+// Description: Find the average of the given ints, out to stream and return
+//
+// Parameters:  rcData - the string containing the ints
+//              rcOut - the stream to write to
+//
+// Returned:    the average
+//***************************************************************************
 double IIntAnalyzer::findAverage(const std::string &rcData, std::ostream &rcOut) const
 {
     std::vector<int> cData = parseLine(rcData);
