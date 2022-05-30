@@ -1,3 +1,12 @@
+//***************************************************************************
+// File name:   main.cpp
+// Author:      chadd williams
+// Date:        5/29/2022
+// Class:       CS 485
+// Assignment:  Examples
+// Purpose:     Demonstrate Template Method Pattern
+//***************************************************************************
+
 #include <iostream>
 #include <vector> 
 #include <string>

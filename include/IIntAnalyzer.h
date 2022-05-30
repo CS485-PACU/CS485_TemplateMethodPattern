@@ -1,3 +1,11 @@
+//***************************************************************************
+// File name:   IIntAnalyzer.h
+// Author:      chadd williams
+// Date:        5/29/2022
+// Class:       CS 485
+// Assignment:  Examples
+// Purpose:     Demonstrate Template Method Pattern
+//***************************************************************************
 #pragma once
 #include <string>
 #include <vector>
